@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>OSM Unicode Coverage</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+    <style>
+html, body, #map {
+  font-family: sans-serif;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+#map {
+  height: 70%;
+}
+li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 18px;
+}
+input {
+  margin-left: -10px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+label span {
+  cursor: pointer;
+}
+    </style>
+  </head>
+  <body>
+    <div id="map">
+    </div>
+    <ul id="uniqueLangs">
+    </ul>
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+   integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+   crossorigin=""></script>
+    <script src="map.js">
+    </script>
+  </body>
+</html>
