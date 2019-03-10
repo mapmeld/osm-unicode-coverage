@@ -18,17 +18,17 @@ Current mapped areas: Antarctica, Australia/Oceania, South America
 
 ## Examples
 
-<img src="https://mapmeld.com/osm-unicode-coverage/img/latinextendeda.png?r=2"/>
+Latin Extended-B hotspot in Guyana
 
-This island (Vanua Lava in Vanuatu) does Latin Extended-A for mountain and place names, but the rest of Vanuatu does not
+<img src="https://mapmeld.com/osm-unicode-coverage/img/latinextendedb.png?r=3"/>
+
+Locating an Antarctic base browsing for Devanagari script
 
 <img src="https://mapmeld.com/osm-unicode-coverage/img/antarctic_bases.png?r=2"/>
 
-Antarctic bases using Devanagari script
+Unicode flag vandalism (found in New Zealand)
 
 <img src="https://mapmeld.com/osm-unicode-coverage/img/czechvandal.png?r=2"/>
-
-Unicode flag vandalism
 
 ## License
 
