@@ -4,6 +4,8 @@ Using OSM extracts from https://download.geofabrik.de/, find areas using each Un
 
 Lat/lng rounded to nearest three-digits to avoid over-density
 
+Currently: Antarctica, Australia/Oceania
+
 Excludes Basic Latin and Punctuation
 
 ## License
