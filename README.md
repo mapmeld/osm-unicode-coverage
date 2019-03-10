@@ -12,9 +12,23 @@ Excludes Basic Latin, Latin-1 Supplement, and Punctuation. Includes Latin Extend
 
 - Removing errors or vandalism (for example, "Čzech Republik🇨🇿" in New Zealand)
 - Locating local hotspots for languages (Antarctic bases, shops catering toward local communities or foreign visitors)
-- Locating example points for less common languages (for example, different Indian scripts)
+- Highlighting use of less common scripts (for example, some Indian scripts are used only rarely on OSM names)
 - Measuring use of dual scripts
 - Measuring use of local script / Latin script in foreigner-mapped areas
+
+## Examples
+
+<img src="https://mapmeld.com/osm-unicode-coverage/img/latinextendeda.png"/>
+
+This island (Vanua Lava in Vanuatu) does Latin Extended-A for mountain and place names, but the rest of Vanuatu does not
+
+<img src="https://mapmeld.com/osm-unicode-coverage/img/antarctic_bases.png"/>
+
+Antarctic bases using Devanagari script
+
+<img src="https://mapmeld.com/osm-unicode-coverage/img/czechvandal.png"/>
+
+Unicode flag vandalism
 
 ## License
 
