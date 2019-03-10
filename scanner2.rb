@@ -21,18 +21,17 @@ class Parser
       @lng = nil
     end
     if attributes.has_key?('lat') && attributes.has_key?('lon')
-      @lat = attributes['lat'].to_f.round(3).to_s
-      @lng = attributes['lon'].to_f.round(3).to_s
+      @lat = attributes['lat'].to_f.round(2).to_s
+      @lng = attributes['lon'].to_f.round(2).to_s
     end
     if attributes.has_key?('k') && attributes['k'] === 'name' && !@lat.nil?
       blocks = Unicode::Blocks.blocks(attributes['v'])
       if blocks.length > 1 || blocks[0] != 'Basic Latin'
         print blocks
-        # record this not-just-Basic Latin
-        @output_areas[@lat] = {} unless @output_areas.has_key? @lat
-        @output_areas[@lat][@lng] = [] unless @output_areas[@lat].has_key? @lng
         blocks.each do |block|
-          if block != 'Basic Latin' && block != 'General Punctuation'
+          if block != 'Basic Latin' && block != 'General Punctuation' && block != 'Latin-1 Supplement'
+            @output_areas[@lat] = {} unless @output_areas.has_key? @lat
+            @output_areas[@lat][@lng] = [] unless @output_areas[@lat].has_key? @lng
             @output_areas[@lat][@lng] << block unless @output_areas[@lat][@lng].include? block
           end
         end
