@@ -2,11 +2,11 @@
 
 Using OSM extracts from https://download.geofabrik.de/, find areas using each Unicode Block
 
+Excludes Basic Latin, Latin-1 Supplement, and Punctuation. Includes Latin Extended
+
 Lat/lng rounded to nearest two-digits to avoid over-density
 
-Currently: Antarctica, Australia/Oceania, South America
-
-Excludes Basic Latin, Latin-1 Supplement, and Punctuation. Includes Latin Extended
+Current mapped areas: Antarctica, Australia/Oceania, South America
 
 ## Uses
 
