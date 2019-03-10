@@ -18,15 +18,15 @@ Current mapped areas: Antarctica, Australia/Oceania, South America
 
 ## Examples
 
-<img src="https://mapmeld.com/osm-unicode-coverage/img/latinextendeda.png"/>
+<img src="https://mapmeld.com/osm-unicode-coverage/img/latinextendeda.png?r=2"/>
 
 This island (Vanua Lava in Vanuatu) does Latin Extended-A for mountain and place names, but the rest of Vanuatu does not
 
-<img src="https://mapmeld.com/osm-unicode-coverage/img/antarctic_bases.png"/>
+<img src="https://mapmeld.com/osm-unicode-coverage/img/antarctic_bases.png?r=2"/>
 
 Antarctic bases using Devanagari script
 
-<img src="https://mapmeld.com/osm-unicode-coverage/img/czechvandal.png"/>
+<img src="https://mapmeld.com/osm-unicode-coverage/img/czechvandal.png?r=2"/>
 
 Unicode flag vandalism
 
