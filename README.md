@@ -6,7 +6,7 @@ Excludes Basic Latin, Latin-1 Supplement, and Punctuation. Includes Latin Extend
 
 Lat/lng rounded to nearest two-digits to avoid over-density
 
-Current mapped areas: Antarctica, Australia/Oceania, Central and South America
+Current mapped areas: Antarctica, Australia/Oceania, Central and South America, Africa
 
 ## Uses
 
