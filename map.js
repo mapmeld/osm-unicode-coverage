@@ -78,6 +78,7 @@ let loadOntoMap = (jdata) => {
 fetch("./antarctica.json?r=3").then(res => res.json()).then(loadOntoMap);
 fetch("./africa.json").then(res => res.json()).then(loadOntoMap);
 fetch("./asia.json").then(res => res.json()).then(loadOntoMap);
+fetch("./europe.json").then(res => res.json()).then(loadOntoMap);
 fetch("./oceania.json").then(res => res.json()).then(loadOntoMap);
 fetch("./southamerica.json").then(res => res.json()).then(loadOntoMap);
 fetch("./northamerica.json").then(res => res.json()).then(loadOntoMap);

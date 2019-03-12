@@ -1,12 +1,10 @@
 # OSM Unicode Coverage
 
-Using OSM extracts from https://download.geofabrik.de/, find areas using each Unicode Block
+Using global OSM extracts from https://download.geofabrik.de/, find areas using each Unicode Block
 
 Excludes Basic Latin, Latin-1 Supplement, and Punctuation. Includes Latin Extended
 
 Lat/lng rounded to nearest two-digits to avoid over-density
-
-Current mapped areas: Antarctica, Australia/Oceania, Central and South America, Africa
 
 ## Uses
 
