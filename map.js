@@ -6,6 +6,9 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(mymap);
 
 let markersByLang = {};
+// if a script is common enough to be used everywhere in a whole country, that would be too many markers to render
+// reduce density of points`
+let bigLangs = ['Arabic', 'Georgian', 'Hebrew', 'Tifinagh', 'Cyrillic', 'CJK Unified Ideographs', 'Hiragana', 'Katakana', 'Lao', 'Myanmar', 'Thai', 'Hangul Syllables'];
 
 let loadOntoMap = (jdata) => {
   currentLayer = null;
@@ -21,14 +24,13 @@ let loadOntoMap = (jdata) => {
 
       langs.forEach((lang) => {
         if (markersByLang[lang]) {
-          if (langs.length === 1 && (langs[0] === 'Arabic' || langs[0] === 'Hebrew' || langs[0] === 'Tifinagh' || langs[0] === 'Cyrillic' || langs[0] === 'CJK Unified Ideographs')) {
+          if (bigLangs.indexOf(lang) > -1) {
             // yes minimization
             if (!hasCoords[lang]) {
               hasCoords[lang] = {};
             }
             if (hasCoords[lang][Math.round(lat.toFixed(1) * 3)] && hasCoords[lang][Math.round(lat.toFixed(1) * 3)][Math.round(lng.toFixed(1) * 3)]) {
               // hide me
-
             } else {
               // place and remember me
               if (!hasCoords[lang][Math.round(lat.toFixed(1) * 3)]) {
@@ -75,6 +77,8 @@ let loadOntoMap = (jdata) => {
 
 fetch("./antarctica.json?r=3").then(res => res.json()).then(loadOntoMap);
 fetch("./africa.json").then(res => res.json()).then(loadOntoMap);
+fetch("./asia.json").then(res => res.json()).then(loadOntoMap);
 fetch("./oceania.json").then(res => res.json()).then(loadOntoMap);
 fetch("./southamerica.json").then(res => res.json()).then(loadOntoMap);
+fetch("./northamerica.json").then(res => res.json()).then(loadOntoMap);
 fetch("./centralamerica.json").then(res => res.json()).then(loadOntoMap);

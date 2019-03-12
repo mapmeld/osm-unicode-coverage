@@ -27,9 +27,9 @@ class Parser
     if attributes.has_key?('k') && attributes['k'] === 'name' && !@lat.nil?
       blocks = Unicode::Blocks.blocks(attributes['v'])
       if blocks.length > 1 || blocks[0] != 'Basic Latin'
-        print blocks
         blocks.each do |block|
           if block != 'Basic Latin' && block != 'General Punctuation' && block != 'Latin-1 Supplement'
+            print blocks
             @output_areas[@lat] = {} unless @output_areas.has_key? @lat
             @output_areas[@lat][@lng] = [] unless @output_areas[@lat].has_key? @lng
             @output_areas[@lat][@lng] << block unless @output_areas[@lat][@lng].include? block
